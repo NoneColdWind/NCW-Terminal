@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="MainStagePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.ncbh.ncw.ncwjavafx.MainController">
+   <children>
+      <ImageView fx:id="MainImageView" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/custom/default.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="MainPane" prefHeight="698.0" prefWidth="1250.0">
+         <children>
+            <JFXTextArea fx:id="MainJFXTextArea" focusColor="#ea00ff" layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="322.0" unFocusColor="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton fx:id="ButtonClear" layoutX="14.0" layoutY="330.0" onAction="#ButtonClearClick" prefHeight="64.0" prefWidth="64.0" text="C" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum7" layoutX="14.0" layoutY="410.0" onAction="#ButtonNum7Click" prefHeight="64.0" prefWidth="64.0" text="7" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum4" layoutX="14.0" layoutY="490.0" onAction="#ButtonNum4Click" prefHeight="64.0" prefWidth="64.0" text="4" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum1" layoutX="18.0" layoutY="570.0" onAction="#ButtonNum1Click" prefHeight="64.0" prefWidth="64.0" text="1" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum8" layoutX="100.0" layoutY="410.0" onAction="#ButtonNum8Click" prefHeight="64.0" prefWidth="64.0" text="8" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum5" layoutX="100.0" layoutY="490.0" onAction="#ButtonNum5Click" prefHeight="64.0" prefWidth="64.0" text="5" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum2" layoutX="100.0" layoutY="570.0" onAction="#ButtonNum2Click" prefHeight="64.0" prefWidth="64.0" text="2" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNumDot" layoutX="100.0" layoutY="650.0" onAction="#ButtonNumDotClick" prefHeight="64.0" prefWidth="64.0" text="." textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNumEqu" layoutX="186.0" layoutY="650.0" onAction="#ButtonNumEquClick" prefHeight="64.0" prefWidth="64.0" text="=" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNumAdd" layoutX="272.0" layoutY="650.0" onAction="#ButtonNumAddClick" prefHeight="64.0" prefWidth="64.0" text="+" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum3" layoutX="186.0" layoutY="570.0" onAction="#ButtonNum3Click" prefHeight="64.0" prefWidth="64.0" text="3" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum6" layoutX="186.0" layoutY="490.0" onAction="#ButtonNum6Click" prefHeight="64.0" prefWidth="64.0" text="6" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum9" layoutX="186.0" layoutY="410.0" onAction="#ButtonNum9Click" prefHeight="64.0" prefWidth="64.0" text="9" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNumDiv" layoutX="272.0" layoutY="410.0" onAction="#ButtonNumDivClick" prefHeight="64.0" prefWidth="64.0" text="/" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNumMul" layoutX="272.0" layoutY="490.0" onAction="#ButtonNumMulClick" prefHeight="64.0" prefWidth="64.0" text="x" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNumSub" layoutX="272.0" layoutY="570.0" onAction="#ButtonNumSubClick" prefHeight="64.0" prefWidth="64.0" text="-" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonNum0" layoutX="18.0" layoutY="650.0" onAction="#ButtonNum0Click" prefHeight="64.0" prefWidth="64.0" text="0" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonLeftBracket" layoutX="100.0" layoutY="330.0" onAction="#ButtonLeftBracketClick" prefHeight="64.0" prefWidth="64.0" text="(" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonRightBracket" layoutX="186.0" layoutY="330.0" onAction="#ButtonRightBracketClick" prefHeight="64.0" prefWidth="64.0" text=")" textFill="#ea00ff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonPlay" alignment="CENTER" layoutX="1218.0" layoutY="650.0" onAction="#ButtonPlayClick" prefHeight="48.0" prefWidth="48.0" text="⏸" textFill="#ea00ff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

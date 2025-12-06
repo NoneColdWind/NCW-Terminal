@@ -1,0 +1,52 @@
+{
+  "music1.wav": [
+    {
+      "file_name": "music1.wav",
+      "file_size": "24,233,678 Byte",
+      "file_md5": "28b8ca9d632ec2291e639f5cae179954",
+      "music_name": "Constant Moderato (OST)",
+      "music_author": "Mitsukiyo",
+      "music_time": "2min17s"
+    }
+  ],
+  "music2.wav": [
+    {
+      "file_name": "music2.wav",
+      "file_size": "22,023,958 Byte",
+      "file_md5": "9e746f02067b1af5bf1ca45e3e694759",
+      "music_name": "Aoharu Band Arrange (OST)",
+      "music_author": "Mitsukiyo",
+      "music_time": "1min54s"
+    }
+  ],
+  "music3.wav": [
+    {
+      "file_name": "music3.wav",
+      "file_size": "27,144,970 Byte",
+      "file_md5": "bcfb3446a4cb0a78cd5789a6060a2d86",
+      "music_name": "RE Aoharu (OST)",
+      "music_author": "Nor",
+      "music_time": "2min21s"
+    }
+  ],
+  "music4.wav": [
+    {
+      "file_name": "music4.wav",
+      "file_size": "35,558,732 Byte",
+      "file_md5": "e12fd5c50962a88d41765b169efbb7b6",
+      "music_name": "Constant Moderato Piano Arrange (OST)",
+      "music_author": "Mitsukiyo",
+      "music_time": "3min05s"
+    }
+  ],
+  "music5.wav": [
+    {
+      "file_name": "music5.wav",
+      "file_size": "23,097,234 Byte",
+      "file_md5": "e08892a5da3d1c257879d02d8161db55",
+      "music_name": "Unwelcome School (OST)",
+      "music_author": "Mitsukiyo",
+      "music_time": "2min00s"
+    }
+  ]
+}

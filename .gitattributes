@@ -1,0 +1,2 @@
+src\main\resources\resources\sounds\music\default\*.wav filter=lfs diff=lfs merge=lfs -text
+src\main\resources\resources\sounds\sf2\*.sf2 filter=lfs diff=lfs merge=lfs -text
