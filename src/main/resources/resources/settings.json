@@ -5,10 +5,10 @@
   "background_mode": "CUSTOM",
   "music_is_playing": true,
   "continue_playing": true,
-  "music_play_mode": "DEFAULT",
+  "music_pref": "DEFAULT",
+  "music_play_mode": "REPEAT_ALL",
   "login": false,
   "launch_times": 0,
-  "default_sf2": "resources/sounds/sf2/SGM-V2.01.sf2",
   "default_server_port": 11451,
   "operate_mode": "float"
 }

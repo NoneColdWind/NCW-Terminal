@@ -6,10 +6,19 @@ plugins {
     id("org.beryx.jlink") version "3.1.1"
 }
 
-group = "cn.ncbh.ncw"
-version = "1.0.4-beta18"
+group = "cn.ncw.javafx"
+version = "1.0.4-beta19"
 
 repositories {
+    maven { url = uri("https://maven.aliyun.com/repository/public/") }
+    maven { url = uri("https://maven.aliyun.com/repository/google/") }
+    google()
+    gradlePluginPortal()
+
+    flatDir {
+        dirs("libs")
+    }
+
     mavenCentral()
 }
 
@@ -17,7 +26,7 @@ val junitVersion = "5.10.2"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(25)
     }
 }
 
@@ -26,14 +35,16 @@ tasks.withType<JavaCompile> {
 }
 
 application {
-    mainModule = "cn.ncbh.ncw.ncwjavafx"
-    mainClass = "cn.ncbh.ncw.ncwjavafx.NCWTerminal"  // 主类全限定名
+    mainModule = "cn.ncw.javafx.ncwjavafx"
+    mainClass = "cn.ncw.javafx.ncwjavafx.NCWTerminal"  // 主类全限定名
     applicationName = "NCW-Terminal"
-
+    applicationDefaultJvmArgs = listOf(
+        "--enable-native-access=javafx.graphics"
+    )
 }
 
 javafx {
-    version = "23.0.1"
+    version = "25.0.1"
     modules = listOf("javafx.controls", "javafx.fxml", "javafx.web", "javafx.swing", "javafx.media")
 }
 
@@ -45,6 +56,15 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
 
     implementation("javazoom:jlayer:1.0.1")
+
+    // NCW Logger
+    implementation(name ,"NCW-Logger-1.0.4-hotfix2-1")
+
+    // NCW Music
+    implementation(name ,"Music-1.0.4-hotfix2")
+
+    // NCW Utils
+    implementation(name, "NCWUtils-1.0.1")
 
     implementation("com.jfoenix:jfoenix:9.0.10")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:2.0.20")

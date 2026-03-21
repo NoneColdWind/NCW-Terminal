@@ -1,4 +1,4 @@
-module cn.ncbh.ncw.ncwjavafx {
+module cn.ncw.javafx.ncwjavafx {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -17,12 +17,15 @@ module cn.ncbh.ncw.ncwjavafx {
     requires annotations;
     requires java.sql;
     requires com.fasterxml.jackson.databind;
+    requires javafx.media;
+    requires NCW.Logger;
+    requires Music;
+    requires NCWUtils;
 
-    opens cn.ncbh.ncw.ncwjavafx to javafx.fxml;
+    opens cn.ncw.javafx.ncwjavafx to javafx.fxml;
 
-    exports cn.ncbh.ncw.ncwjavafx;
+    exports cn.ncw.javafx.ncwjavafx;
 
-    exports cn.ncbh.ncw.ncwjavafx.base;
+    exports cn.ncw.javafx.ncwjavafx.base;
 
-    exports cn.ncbh.ncw.ncwjavafx.log;
 }
