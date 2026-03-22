@@ -260,7 +260,6 @@ public class NCWInitialize {
         DEFAULT_FLOAT_PART_LENGTH = SETTINGS.getDefault_float_length();
         BACKGROUND_MODE = SETTINGS.getBackground_mode();
         MUSIC_IS_PLAYING = SETTINGS.isMusic_is_playing();
-        CONTINUE_PLAY = SETTINGS.isContinue_playing();
         MUSIC_PREF = SETTINGS.getMusic_pref();
         MUSIC_PLAY_MODE = SETTINGS.getMusic_play_mode();
         LOGIN = SETTINGS.isLogin();
@@ -286,7 +285,6 @@ public class NCWInitialize {
         DEFAULT_FLOAT_PART_LENGTH = SETTINGS.getDefault_float_length();
         BACKGROUND_MODE = SETTINGS.getBackground_mode();
         MUSIC_IS_PLAYING = SETTINGS.isMusic_is_playing();
-        CONTINUE_PLAY = SETTINGS.isContinue_playing();
         MUSIC_PREF = SETTINGS.getMusic_pref();
         MUSIC_PLAY_MODE = SETTINGS.getMusic_play_mode();
         LOGIN = SETTINGS.isLogin();
@@ -458,16 +456,6 @@ public class NCWInitialize {
                         logger.warn("File music_info.json do not pass.", "initialize");
                         logger.info("File music_info.json is overwriting.", "initialize");
                         JarResourceCopier.copyResource("/resources/sounds/music/default/music_info.json", default_music_path);
-                    }
-                } catch (NoSuchAlgorithmException | IOException ignored) {
-
-                }
-
-                try {
-                    if (!Objects.equals(FileCheckMethod.check_md5_with_sha(resources_path + "\\ncw.json"), MD5_SHA256_CHECK.get("ncw.json"))) {
-                        logger.warn("File ncw.json do not pass.", "initialize");
-                        logger.info("File ncw.json is overwriting.", "initialize");
-                        JarResourceCopier.copyResource("/resources/ncw.json", resources_path);
                     }
                 } catch (NoSuchAlgorithmException | IOException ignored) {
 

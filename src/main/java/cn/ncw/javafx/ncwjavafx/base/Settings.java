@@ -12,8 +12,6 @@ public class Settings {
 
     private boolean music_is_playing;
 
-    private boolean continue_playing;
-
     private String music_pref;
 
     private String music_play_mode;
@@ -32,13 +30,12 @@ public class Settings {
 
     }
 
-    public Settings(boolean _debug, boolean _file_check, int _default_float_length, String _background_mode, boolean _music_is_playing, boolean _continue_playing, String _music_pref, String _music_play_mode, boolean _login, int _launch_times, String _default_sf2, int _default_server_port, String _operate_mode) {
+    public Settings(boolean _debug, boolean _file_check, int _default_float_length, String _background_mode, boolean _music_is_playing, String _music_pref, String _music_play_mode, boolean _login, int _launch_times, String _default_sf2, int _default_server_port, String _operate_mode) {
 
         this.debug = _debug;
         this.file_check = _file_check;
         this.background_mode = _background_mode;
         this.music_is_playing = _music_is_playing;
-        this.continue_playing = _continue_playing;
         this.music_pref = _music_pref;
         this.music_play_mode = _music_play_mode;
         this.login = _login;
@@ -71,10 +68,6 @@ public class Settings {
 
     public boolean isMusic_is_playing() {
         return this.music_is_playing;
-    }
-
-    public boolean isContinue_playing() {
-        return this.continue_playing;
     }
 
     public String getMusic_pref() {
@@ -125,10 +118,6 @@ public class Settings {
 
     public void setMusic_is_playing(boolean value) {
         this.music_is_playing = value;
-    }
-
-    public void setContinue_playing(boolean value) {
-        this.continue_playing = value;
     }
 
     public void setMusic_pref(String value) {

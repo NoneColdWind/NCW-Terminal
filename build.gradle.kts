@@ -3,11 +3,11 @@ plugins {
     application
     id("org.javamodularity.moduleplugin") version "1.8.12"
     id("org.openjfx.javafxplugin") version "0.1.0"
-    id("org.beryx.jlink") version "3.1.1"
+    id("org.beryx.jlink") version "3.1.5"
 }
 
 group = "cn.ncw.javafx"
-version = "1.0.4-beta19"
+version = "1.0.5"
 
 repositories {
     maven { url = uri("https://maven.aliyun.com/repository/public/") }

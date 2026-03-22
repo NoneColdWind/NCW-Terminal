@@ -77,6 +77,12 @@
     },
     "1.0.4-beta18": {
       "desc": "优化了RSA密钥对存储方式，提高安全性"
+    },
+    "1.0.4-beta19": {
+      "desc": "优化了项目结构，加入NCW-Logger,NCW-Music,NCW-Utils，更换Java 25和Gradle 9.4.0"
+    },
+    "1.0.5": {
+      "desc": "修复了一些Bug"
     }
   }
 }
